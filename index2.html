@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Простой список без JS</title>
+    <style>
+        /* Базовые стили для красоты */
+        body {
+            font-family: sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        .todo-container {
+            background: white;
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Стили для самого списка */
+        ul {
+            list-style: none; /* Убираем стандартные точки */
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Стили для каждой задачи (li) */
+        li {
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            padding: 15px;
+            display: flex; /* Чтобы текст и кнопка были в ряд */
+            justify-content: space-between; /* Разнести по краям */
+            align-items: center;
+            transition: background 0.2s;
+        }
+
+        li:hover {
+            background-color: #f9f9f9; /* Подсветка при наведении */
+        }
+
+        /* Текст задачи */
+        .task-text {
+            font-size: 18px;
+            color: #444;
+        }
+
+        /* Кнопка удаления (просто для вида, она не работает без JS) */
+        .delete-btn {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: not-allowed; /* Курсор показывает, что нажать нельзя */
+            font-size: 14px;
+        }
+        
+        /* Добавим галочку для выполненного (тоже визуально) */
+        .done {
+            text-decoration: line-through;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="todo-container">
+        <h2>📝 Мои дела (Статика)</h2>
+        
+        <!-- Вот он, список! -->
+        <ul>
+            <!-- Задача 1 -->
+            <li>
+                <span class="task-text">Купить хлеб</span>
+                <button class="delete-btn">Удалить</button>
+            </li>
+
+            <!-- Задача 2 (пример выполненной) -->
+            <li>
+                <span class="task-text done">Сделать зарядку</span>
+                <button class="delete-btn">Удалить</button>
+            </li>
+
+            <!-- Задача 3 -->
+            <li>
+                <span class="task-text">Позвонить другу</span>
+                <button class="delete-btn">Удалить</button>
+            </li>
+            
+            <!-- Задача 4 -->
+            <li>
+                <span class="task-text">Изучить HTML</span>
+                <button class="delete-btn">Удалить</button>
+            </li>
+        </ul>
+        
+        <p style="text-align: center; color: #888; font-size: 14px; margin-top: 20px;">
+            ⚠️ Кнопки не работают, так как нет JavaScript.<br>
+            Список не исчезнет после обновления страницы.
+        </p>
+    </div>
+
+</body>
+</html>

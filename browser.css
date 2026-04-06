@@ -1,0 +1,126 @@
+body {
+margin: 0;
+padding: 0;
+}
+#window {
+width: 100vw;
+height: 100vh;
+border: none;
+}
+#url {
+display: flex;
+flex-direction: row;
+gap: 5px;
+align-items: center;
+justify-content: center;
+}
+#urlAdress {
+margin-top: 15px;
+width: 900px;
+height: 30px;
+border: none;
+border-radius: 7px;
+background-color: rgb(150, 150, 150);
+font-size: 24px;
+border: solid black 2px;
+color: black;
+}
+header {
+position: sticky;
+border-bottom: solid black 10px;
+border-top: solid black 10px;
+height: 10vh;
+background-color: rgb(255, 255, 255);
+color: black;
+transition: all 0.3s ease;
+}
+header.dark {
+background-color: rgb(123, 123, 123);
+color: white;
+}
+#buttons {
+display: flex;
+gap: 5px;
+margin-top: 5px;
+flex-direction: row;
+}
+#search {
+border: solid black 2px;
+border-radius: 7px;
+margin-top: 15px;
+height: 30px;
+transition: all 0.3s ease;
+&:active {
+background-color: rgb(107, 107, 107);
+color: white;
+}
+&:hover {
+background-color: rgb(169, 169, 169);
+}
+}
+h1 {
+text-align: center;
+}
+#Home {
+min-width: 40px;
+min-height: 20px;
+max-width: 70px;
+max-height: 40px;
+border: solid black 2px;
+border-radius: 7px;
+transition: all 0.3s ease;
+}
+#back {
+border: solid black 2px;
+border-radius: 7px;
+min-width: 60px;
+min-height: 30px;
+max-width: 70px;
+max-height: 40px;
+&:active {
+background-color: rgb(107, 107, 107);
+color: white;
+}
+transition: all 0.3s ease;
+}
+#reload {
+min-width: 40px;
+min-height: 20px;
+max-width: 70px;
+max-height: 40px;
+border: solid black 2px;
+border-radius: 7px;
+&:active {
+background-color: rgb(107, 107, 107);
+color: white;
+}
+transition: all 0.3s ease;
+}
+#forward {
+min-width: 40px;
+min-height: 20px;
+max-width: 70px;
+max-height: 40px;
+border: solid black 2px;
+border-radius: 7px;
+&:active {
+background-color: rgb(107, 107, 107);
+color: white;
+}
+transition: all 0.3s ease;
+}
+iframe {
+background-color: rgb(72, 72, 72);
+}
+#Theme {
+min-width: 40px;
+min-height: 20px;
+max-width: 70px;
+max-height: 40px;
+border: solid black 2px;
+border-radius: 7px;
+&:active {
+background-color: rgb(107, 107, 107);
+color: white;
+}
+}
